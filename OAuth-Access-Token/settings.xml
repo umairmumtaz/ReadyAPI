@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="1c50de27-d552-4421-84db-d567d6f82cb1" name="OAuth Access Token" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="1c50de27-d552-4421-84db-d567d6f82cb1fileName">OAuth-Access-Token</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="0aa56d3b-058d-4833-b965-b9455c6f6cb7" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC003- 2. Authenticate request and response (AReq/ARes)" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="0aa56d3b-058d-4833-b965-b9455c6f6cb7fileName">TC003--2.-Authenticate-request-and-response-%28AReq%2FARes%29</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="delay" name="wait" id="fd47dbfb-66c0-4122-9076-7f69ceaa87e0"><con:settings/><con:config><delay>5000</delay></con:config></con:testStep><con:testStep type="restrequest" name="Authenticate - 2. Authenticate request and response (AReq/ARes)" id="5794950b-d161-4d82-8197-b76d44c55513"><con:settings/><con:config service="http://c2-int.eastus.cloudapp.azure.com 2" resourcePath="/spy/proxy/c2-3ds2-svc/10032/authenticate" methodName="Authenticate" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Authenticate - 2. Authenticate request and response (AReq/ARes)" id="667aff46-885c-4707-be92-ee5dd44714b1" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Content-Type" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://c2-int.eastus.cloudapp.azure.com</con:endpoint><con:request>{\r
+   "messageId" : "TEST-fghfghfhMSG_ID",\r
+   "aReq" : {\r
+      "threeDSCompInd" : "Y",\r
+      "threeDSRequestorID" : "az0123456789",\r
+      "threeDSRequestorName" : "Example Requestor name",\r
+      "threeDSRequestorURL" : "https://threedsrequestor.adomainname.net",\r
+      "acquirerBIN" : "DEMO-VI",\r
+      "acquirerMerchantID" : "mGm6AJZ1YotkJJmOk0fx",\r
+      "addrMatch" : "N",\r
+      "cardExpiryDate" : "1910",\r
+      "acctNumber" : "4003000123456781",\r
+      "billAddrCity" : "Bill City Name",\r
+      "billAddrCountry" : "840",\r
+      "billAddrLine1" : "Bill Address Line 1",\r
+      "billAddrLine2" : "Bill Address Line 2",\r
+      "billAddrLine3" : "Bill Address Line 3",\r
+      "billAddrPostCode" : "Bill Post Code",\r
+      "billAddrState" : "CO",\r
+      "email" : "example@example.com",\r
+      "notificationURL" : "https://elavon.com",\r
+      "homePhone" : {\r
+         "cc" : "123",\r
+         "subscriber" : "123456789"\r
+      },\r
+      "mobilePhone" : {\r
+         "cc" : "123",\r
+         "subscriber" : "123456789"\r
+      },\r
+      "cardholderName" : "Cardholder Name",\r
+      "shipAddrCity" : "Ship City Name",\r
+      "shipAddrCountry" : "840",\r
+      "shipAddrLine1" : "Ship Address Line 1",\r
+      "shipAddrLine2" : "Ship Address Line 2",\r
+      "shipAddrLine3" : "Ship Address Line 3",\r
+      "shipAddrPostCode" : "Ship Post Code",\r
+      "shipAddrState" : "CO",\r
+      "workPhone" : {\r
+         "cc" : "123",\r
+         "subscriber" : "123456789"\r
+      },\r
+      "deviceChannel" : "02",\r
+      "browserAcceptHeader" : "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",\r
+      "browserIP" : "192.168.1.11",\r
+      "browserJavaEnabled" : true,\r
+      "browserLanguage" : "en",\r
+      "browserColorDepth" : "48",\r
+      "browserScreenHeight" : "400",\r
+      "browserScreenWidth" : "600",\r
+      "browserTZ" : "-240",\r
+      "browserUserAgent" : "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0",\r
+      "mcc" : "5411",\r
+      "merchantCountryCode" : "840",\r
+      "merchantName" : "UL TS BV",\r
+      "messageCategory" : "01",\r
+      "messageType" : "AReq",\r
+      "messageVersion" : "2.1.0",\r
+      "purchaseAmount" : "101",\r
+      "purchaseCurrency" : "978",\r
+      "purchaseExponent" : "2",\r
+      "purchaseDate" : "20170316141312",\r
+      "transType" : "01",\r
+      "threeDSServerURL" : "https://localhost:10033/ds-results",\r
+      "threeDSServerTransID" : "${#[3DSecure 2 Service API - Server#TC001- 1. Versioning request and response#Versioning - 1. Versioning request and response]#Response#$['threeDSServerTransID']}",\r
+      "threeDSServerRefNumber" : "3DS_LOA_SER_PPFU_020100_00008",\r
+      "threeDSRequestorAuthenticationInd" : "03",\r
+      "threeDSRequestorAuthenticationInfo" : {\r
+         "threeDSReqAuthMethod" : "02",\r
+         "threeDSReqAuthTimestamp" : "201711071307",\r
+         "threeDSReqAuthData" : "validlogin at UL TS BV"\r
+      },\r
+      "threeDSRequestorChallengeInd" : "02",\r
+      "threeDSRequestorPriorAuthenticationInfo" : {\r
+         "threeDSReqPriorRef" : "d7c1ee99-9478-44a6-b1f2-391e29c6b340",\r
+         "threeDSReqPriorAuthMethod" : "02",\r
+         "threeDSReqPriorAuthTimestamp" : "201710282113",\r
+         "threeDSReqPriorAuthData" : "cKTYtrvvKU7gUoiqbbO7Po"\r
+      },\r
+      "threeDSServerOperatorID" : "1jpeeLAWgGFgS1Ri9tX9",\r
+      "acctType" : "03",\r
+      "acctInfo" : {\r
+         "chAccAgeInd" : "03",\r
+         "chAccDate" : "20140328",\r
+         "chAccChangeInd" : "04",\r
+         "chAccChange" : "20160712",\r
+         "chAccPwChangeInd" : "02",\r
+         "chAccPwChange" : "20170328",\r
+         "shipAddressUsageInd" : "04",\r
+         "shipAddressUsage" : "20160714",\r
+         "txnActivityDay" : "1",\r
+         "txnActivityYear" : "21",\r
+         "provisionAttemptsDay" : "0",\r
+         "nbPurchaseAccount" : "11",\r
+         "suspiciousAccActivity" : "01",\r
+         "shipNameIndicator" : "02",\r
+         "paymentAccInd" : "04",\r
+         "paymentAccAge" : "20160917"\r
+      },\r
+      "acctID" : "personal account",\r
+      "dsReferenceNumber" : "DS_LOA_DIS_PPFU_020100_00010",\r
+      "dsTransID" : "d7c1ee99-9478-44a6-b1f2-391e29c6b340",\r
+      "dsURL" : "https://dsserver.domainname.com",\r
+      "payTokenInd" : true,\r
+      "purchaseInstalData" : "024",\r
+      "merchantRiskIndicator" : {\r
+         "shipIndicator" : "02",\r
+         "deliveryTimeframe" : "01",\r
+         "deliveryEmailAddress" : "deliver@email.com",\r
+         "reorderItemsInd" : "01",\r
+         "preOrderPurchaseInd" : "02",\r
+         "preOrderDate" : "20170519",\r
+         "giftCardAmount" : "337",\r
+         "giftCardCurr" : "840",\r
+         "giftCardCount" : "02"\r
+      },\r
+      "messageExtension" : [\r
+         {\r
+            "name" : "msgextname",\r
+            "id" : "501341592B_0001_4567",\r
+            "criticalityIndicator" : false,\r
+            "data" : {\r
+               "valueOne" : "messageextensiondata",\r
+               "valueTwo" : "moremessageextensiondata"\r
+            }\r
+         }\r
+      ],\r
+      "deviceRenderOptions" : {\r
+         "sdkInterface" : "01",\r
+         "sdkUiType" : [\r
+            "01"\r
+         ]\r
+      },\r
+      "recurringExpiry" : "20180131",\r
+      "recurringFrequency" : "6",\r
+      "sdkMaxTimeout" : "05",\r
+      "sdkTransID" : "8a880dc0-d2d2-4067-bcb1-b08d1690b26e",\r
+      "sdkReferenceNumber" : "12345",\r
+      "sdkAppID" : "8a880dc0-d2d2-4067-bcb1-b08d1690b26e",\r
+      "broadInfo" : {\r
+         "message" : "TLS 1.x will be turned off starting summer 2019"\r
+      }\r
+   }\r
+}</con:request><con:originalUri>http://c2-int.eastus.cloudapp.azure.com/spy/proxy/c2-3ds2-svc/10032/authenticate</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="2e4f0e5c-946f-4ab3-bfa9-15ba8f5160df" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="ed48d381-4ec5-4224-85f1-5c9597be082f" name="Check for existence of [authenticationValue]"><con:configuration><path>$['aRes']['authenticationValue']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="a30046c2-fb31-4588-a998-ac4d7fb0be7f" name="Check for existence of [acsTransID]"><con:configuration><path>$['aRes']['acsTransID']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="582df65c-497f-45a4-9375-6e24f68807d3" name="Check for existence of [creq]"><con:configuration><path>$['creq']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="62a58e54-1cfa-4310-9c24-bef0862f26f8" name="Check for existence of [dsTransID]"><con:configuration><path>$['aRes']['dsTransID']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="9f350697-ef4f-4389-9f49-cdf06a56a15e" name="Match content of [threeDSServerTransID]"><con:configuration><path>$['aRes']['threeDSServerTransID']</path><content>${Authenticate - 2. Authenticate request and response (AReq/ARes)#Request#$['aReq']['threeDSServerTransID']}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="6652c6d4-b611-4507-823b-14a3ff3dc7d7" name="Match content of [messageId]"><con:configuration><path>$['messageId']</path><content>${Authenticate - 2. Authenticate request and response (AReq/ARes)#Request#$['messageId']}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="4ce57ead-dc15-4e1b-8f4c-1e66fa01fbce" name="Match content of [messageType]"><con:configuration><path>$['aRes']['messageType']</path><content>ARes</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="15072051-a9ff-4dfa-9fec-03f31bf5b63d" name="Check for existence of [messageVersion]"><con:configuration><path>$['aRes']['messageVersion']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="f8e7767c-a656-484f-822a-39e09918495f" name="Check for existence of [acsReferenceNumber]"><con:configuration><path>$['aRes']['acsReferenceNumber']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="3bdb3d6e-7890-45f8-abcc-f78e34982873" name="Check for existence of [acsOperatorID]"><con:configuration><path>$['aRes']['acsOperatorID']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="2299fabc-6dd7-4e7d-bac2-87c41774f0fe" name="Check for existence of [dsReferenceNumber]"><con:configuration><path>$['aRes']['dsReferenceNumber']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="e7d5a141-78ff-413f-8a2d-3290e4ced2e1" name="Match content of [transStatus]"><con:configuration><path>$['aRes']['transStatus']</path><content>C</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="1920e834-d447-4003-a6e4-540b4503b594" name="Check for existence of [acsInterface]"><con:configuration><path>$['aRes']['acsRenderingType']['acsInterface']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="408ebb0d-431a-4315-96e9-7351222568f3" name="Check for existence of [acsUiTemplate]"><con:configuration><path>$['aRes']['acsRenderingType']['acsUiTemplate']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="1cd70025-ce17-4169-a544-7ac8e22cfc07" name="Check for existence of [acsSignedContent]"><con:configuration><path>$['aRes']['acsSignedContent']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="c4ad1210-288f-4aed-96c0-f4e9ed2b3f4f" name="Check for existence of [authenticationType]"><con:configuration><path>$['aRes']['authenticationType']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="48aafd85-d61b-48b0-adad-91641816f41a" name="Check for existence of [acsChallengeMandated]"><con:configuration><path>$['aRes']['acsChallengeMandated']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="b82380b4-8ca0-4ad6-8856-aac1e80080ac" name="Check for existence of [acsURL]"><con:configuration><path>$['aRes']['acsURL']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="2b46a3c1-f99a-436c-9b6e-fa39a5721d7d" name="Check for existence of [authenticationValue]"><con:configuration><path>$['aRes']['authenticationValue']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="160d2e08-e9b0-411e-8f3d-633450f4929b" name="Check for existence of [eci]"><con:configuration><path>$['aRes']['eci']</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:environmentSpec><con:entry environmentId="c08d4044-886c-4da9-892b-aab9a34028f6"><con:authProfile>OAuth_Profile1</con:authProfile></con:entry></con:environmentSpec></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="TC003_Property Transfer" id="e7d10b8d-0cb8-4e32-aac9-c05beb014e34"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="false" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="true"><con:name>dsTransID</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>Authenticate - 2. Authenticate request and response (AReq/ARes)</con:sourceStep><con:sourcePath>$['aRes']['dsTransID']</con:sourcePath><con:targetType>dsTransID</con:targetType><con:targetStep>dsTransID/acsTransID</con:targetStep><con:targetPath/><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" transferChildNodes="false" ignoreEmpty="false" transferToAll="false" entitize="false"><con:name>acsTransID</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>Authenticate - 2. Authenticate request and response (AReq/ARes)</con:sourceStep><con:sourcePath>$['aRes']['acsTransID']</con:sourcePath><con:targetType>acsTransID</con:targetType><con:targetStep>dsTransID/acsTransID</con:targetStep><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>threeDSServerTransID</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>Authenticate - 2. Authenticate request and response (AReq/ARes)</con:sourceStep><con:sourcePath>$['aRes']['threeDSServerTransID']</con:sourcePath><con:targetType>threeDSServerTransID</con:targetType><con:targetStep>dsTransID/acsTransID</con:targetStep><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>creq</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>Authenticate - 2. Authenticate request and response (AReq/ARes)</con:sourceStep><con:sourcePath>$['creq']</con:sourcePath><con:targetType>creq</con:targetType><con:targetStep>dsTransID/acsTransID</con:targetStep><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="properties" name="dsTransID/acsTransID" id="ac0effc7-24c2-4659-a0e2-d4c5c582dcae"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>dsTransID</con:name><con:value>e9dc5094-a3cb-4c7a-b875-7604dd6cb2dc</con:value></con:property><con:property><con:name>acsTransID</con:name><con:value>4053448e-99c8-47fc-8917-c9e663c0fe1b</con:value></con:property><con:property><con:name>threeDSServerTransID</con:name><con:value>09239781-ab06-4eed-95a2-e0f142179f16</con:value></con:property><con:property><con:name>creq</con:name><con:value>eyJtZXNzYWdlVHlwZSI6IkNSZXEiLCJtZXNzYWdlVmVyc2lvbiI6IjIuMS4wIiwidGhyZWVEU1NlcnZlclRyYW5zSUQiOiIwOTIzOTc4MS1hYjA2LTRlZWQtOTVhMi1lMGYxNDIxNzlmMTYiLCJhY3NUcmFuc0lEIjoiNDA1MzQ0OGUtOTljOC00N2ZjLTg5MTctYzllNjYzYzBmZTFiIn0=</con:value></con:property></con:properties></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>5794950b-d161-4d82-8197-b76d44c55513</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>e7d10b8d-0cb8-4e32-aac9-c05beb014e34</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase>

@@ -1,0 +1,17 @@
+http%3A%2F%2Fc2-int.eastus.cloudapp.azure.com-1\Versioning.xml
+http%3A%2F%2Fc2-int.eastus.cloudapp.azure.com-2\Authenticate.xml
+http%3A%2F%2Fc2-int.eastus.cloudapp.azure.com-3\Validate.xml
+http%3A%2F%2Fc2-int.eastus.cloudapp.azure.com-4\Result.xml
+http%3A%2F%2Fc2-int.eastus.cloudapp.azure.com-5\Ds-results.xml
+http%3A%2F%2Fc2-int.eastus.cloudapp.azure.com-6\VISA.xml
+http%3A%2F%2Fc2-int.eastus.cloudapp.azure.com\Page3.xml
+http%3A%2F%2Fc2-int.eastus.cloudapp.azure.com-8\Token.xml
+http%3A%2F%2Fc2-int.eastus.cloudapp.azure.com-9\VISA.xml
+3DSecure-2-Service-API---Server\TC001--OAuth-Access-Token.xml
+3DSecure-2-Service-API---Server\TC001--1.-Versioning-request-and-response.xml
+3DSecure-2-Service-API---Server\TC002--ACS-Method-call.xml
+3DSecure-2-Service-API---Server\TC003--2.-Authenticate-request-and-response-%28AReq%2FARes%29.xml
+3DSecure-2-Service-API---Server\TC004--ACS-challenge-call.xml
+3DSecure-2-Service-API---Server\TC005--3.-Validate-CRes.xml
+3DSecure-2-Service-API---Server\TC006--4.-Request-results-%28RReq%29.xml
+3DSecure-2-Service-API---Server\TC007--%2A-Post-results-request-and-response-%28RReq%2FRRes%29.xml

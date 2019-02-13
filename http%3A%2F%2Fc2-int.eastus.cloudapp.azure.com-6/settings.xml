@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="8eb005cb-f6b9-41c9-92c5-f3462922e6ad" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://c2-int.eastus.cloudapp.azure.com 6" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="8eb005cb-f6b9-41c9-92c5-f3462922e6adfileName">http%3A%2F%2Fc2-int.eastus.cloudapp.azure.com-6</con:setting></con:settings><con:definitionCache type="TEXT" rootPart=""/><con:endpoints/></con:interface>

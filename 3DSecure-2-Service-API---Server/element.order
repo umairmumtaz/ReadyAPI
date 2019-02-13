@@ -1,0 +1,8 @@
+TC001--OAuth-Access-Token.xml
+TC001--1.-Versioning-request-and-response.xml
+TC002--ACS-Method-call.xml
+TC003--2.-Authenticate-request-and-response-%28AReq%2FARes%29.xml
+TC004--ACS-challenge-call.xml
+TC005--3.-Validate-CRes.xml
+TC006--4.-Request-results-%28RReq%29.xml
+TC007--%2A-Post-results-request-and-response-%28RReq%2FRRes%29.xml

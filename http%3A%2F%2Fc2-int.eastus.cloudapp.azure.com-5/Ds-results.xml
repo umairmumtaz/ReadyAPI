@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Ds-results" path="/spy/proxy/c2-3ds2-svc/10032/ds-results" id="ec1f412d-294c-461e-b658-f1361a0fac6d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="ec1f412d-294c-461e-b658-f1361a0fac6dfileName">Ds-results</con:setting></con:settings><con:parameters/><con:method name="Ds-results" id="07cc4098-5be6-40d8-93cb-65fab26d9ff8" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>404 401</con:status><con:params/><con:element xmlns:ds="http://c2-int.eastus.cloudapp.azure.com/spy/proxy/c2-3ds2-svc/10032/ds-results">ds:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>407</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="* Post results request and response (RReq/RRes)1" id="8807ec00-d933-481c-afbf-379f9744d999" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Content-Type" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://c2-int.eastus.cloudapp.azure.com</con:endpoint><con:request>{
+"messageType": "RReq",
+"messageVersion": "2.1.0",
+"threeDSServerTransID": "8a880dc0-d2d2-4067-bcb1-b08d1690b26e",
+"dsTransID": "d7c1ee99-9478-44a6-b1f2-391e29c6b340",
+"acsRenderingType": {
+"acsInterface": "01",
+"acsUiTemplate": "02"
+},
+"acsTransID": "3a51d237-01b2-4f98-987f-af9b99009d6d",
+"authenticationMethod": null,
+"authenticationType": "01",
+"authenticationValue": "7rxhlIbvUiQEsXtsswxUG78pxbs=",
+"challengeCancel": null,
+"eci": "05",
+"interactionCounter": "01",
+"messageCategory": "01",
+"transStatus": "Y",
+"messageExtension": null
+}
+
+</con:request><con:originalUri>http://c2-int.eastus.cloudapp.azure.com/spy/proxy/c2-3ds2-svc/10032/ds-results</con:originalUri><con:credentials><con:selectedAuthProfile>OAuth Profile1</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:environmentSpec><con:entry environmentId="c08d4044-886c-4da9-892b-aab9a34028f6"><con:authProfile>OAuth_Profile1</con:authProfile></con:entry></con:environmentSpec></con:request></con:method></con:resource>

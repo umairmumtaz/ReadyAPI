@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="e3b346b0-406d-462f-9418-a66f12811d5a" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC007- * Post results request and response (RReq/RRes)" searchProperties="true" timeout="0" disabled="true" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="e3b346b0-406d-462f-9418-a66f12811d5afileName">TC007--%2A-Post-results-request-and-response-%28RReq%2FRRes%29</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Ds-results - * Post results request and response (RReq/RRes)1" id="243a7b2a-4749-4b12-a108-e72d9ad0382b"><con:settings/><con:config service="http://c2-int.eastus.cloudapp.azure.com 5" resourcePath="/spy/proxy/c2-3ds2-svc/10032/ds-results" methodName="Ds-results" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Ds-results - * Post results request and response (RReq/RRes)1" id="8807ec00-d933-481c-afbf-379f9744d999" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Content-Type" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://c2-int.eastus.cloudapp.azure.com</con:endpoint><con:request>{\r
+   "messageType" : "RReq",\r
+   "messageVersion" : "2.1.0",\r
+   "threeDSServerTransID" : "${#[3DSecure 2 Service API - Server#TC001- 1. Versioning request and response#Versioning - 1. Versioning request and response]#Response#$['threeDSServerTransID']}",\r
+   "dsTransID" : "${#[3DSecure 2 Service API - Server#TC006- 4. Request results (RReq)#Result - 4. Request results (RReq)]#Response#$['rReq']['dsTransID']}",\r
+   "acsRenderingType" : {\r
+      "acsInterface" : "01",\r
+      "acsUiTemplate" : "02"\r
+   },\r
+   "acsTransID" : "${#[3DSecure 2 Service API - Server#TC006- 4. Request results (RReq)#Result - 4. Request results (RReq)]#Response#$['rReq']['acsTransID']}",\r
+   "authenticationMethod" : null,\r
+   "authenticationType" : "01",\r
+   "authenticationValue" : "OdhLys5paMvFMx-O0Qh__09dkqU=",\r
+   "challengeCancel" : null,\r
+   "eci" : "05",\r
+   "interactionCounter" : "01",\r
+   "messageCategory" : "01",\r
+   "transStatus" : "Y",\r
+   "messageExtension" : null\r
+}</con:request><con:originalUri>http://c2-int.eastus.cloudapp.azure.com/spy/proxy/c2-3ds2-svc/10032/ds-results</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="c09369bb-951e-4bbf-aea2-65af0b504df4" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>OAuth Profile1</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:environmentSpec><con:entry environmentId="c08d4044-886c-4da9-892b-aab9a34028f6"><con:authProfile>OAuth_Profile1</con:authProfile></con:entry></con:environmentSpec></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
